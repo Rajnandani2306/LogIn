@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animation</title>
+	<style type="text/css">
+		body
+		{
+			background-image: url('https://image.freepik.com/free-photo/beige-headphone-isolated-pastel-background-minimal-music-concept-3d-rendering_576429-42.jpg');
+			display: flex;
+		    justify-content: center;
+			height: 100vh;
+			align-items: center;
+			background-repeat: no-repeat;
+			background-size:cover;	
+		}
+		.circle1
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 400px;
+			width: 400px;
+			border:3px solid #331B3F;
+			animation: ani 3s linear infinite;
+			box-shadow: 0px 0px 10px #331B3F;
+            border-radius: 20%;
+		}
+		.circle2
+		{
+			display: flex;
+			height: 350px;
+			width: 350px;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			border: 3px solid purple;
+			border-top: 3px solid #DAA03D;
+			border-bottom: 3px solid #DAA03D;
+			animation: ani1 3s linear infinite;	
+		}
+		@keyframes ani 
+		{
+			100%
+			{
+				transform: rotate(360deg);
+			}
+		}
+		@keyframes  ani1
+		{
+			100%
+			{
+				transform: rotate(-360deg);
+			}
+		}
+		.content
+		{
+			align-items: center;
+			justify-content: center;
+			color: cadetblue;
+			border: none;
+			position: fixed;
+		}
+		fieldset
+		{
+			
+			border-color: transparent;
+		}
+		button
+		{
+			color: salmon;
+			background-color: limegreen;
+
+		}
+		.mdiv
+		{
+			
+			margin-right: 8%;
+			background-color: #ACC7B4;
+			padding: 3px 8px 3px 9px;
+			margin-top: 22%;
+			box-shadow: 0px 0px 20px grey;
+		}
+		a 
+		{
+			text-decoration: none;
+			margin-left: 54%;
+			color: indianred;
+		}
+		.Sub
+		{
+			background-color: green;
+			margin-left: 15%;
+			padding: 5px 10px 5px 10px;
+			width: 70%;
+		}
+		img 
+		{
+		    background-size: contain;
+		    height: 30px;
+		    width: 40px;
+			border-radius: 80%;
+			margin-left: 43%;
+		}
+	</style>
+</head>
+<body>
+	<div class="mdiv">
+		<h1 style="color:white;">HELLO WORLD !</h1>
+		<h2 style="color:brown;"> Welcome to MUSIC OLD IS GOLD</h2>
+		<p style="color:red;">Be patience, Flattering life ahead.</p>
+	</div>
+	<div class="circle1">
+		<div class="circle2">
+			<div class="content">
+				<form  autocomplete="off">
+					<img src="https://w1.pngwing.com/pngs/743/500/png-transparent-circle-silhouette-logo-user-user-profile-green-facial-expression-nose-cartoon.png">
+					<h1 align="center" style="color:white;">LOGIN PAGE</h1>
+			<fieldset>
+				<label >USERNAME:</label>
+			<input type="text" name="us"  >
+			<br> <br>
+			<label>PASSWORD:</label> 
+			<input type="Password" name="passw"  > <br> <br>
+			<a href="#">Forgot Password ?</a> <br> <br>
+			<input type="submit" name="login" value="LOGIN" class="Sub">
+	        
+			</fieldset>
+		</form>
+
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+</html>
